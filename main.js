@@ -46,16 +46,14 @@ else{
 
     let output = "";
 
-    datas.data.map((disneychar)=>{
-
         output +=`
 
         <div class="character">
-            <h4>${disneychar.name}</h4>
-            <p>Film: ${disneychar.tvShows}</p>
+            <h4>${datas.name}</h4>
+            <p>Film: ${datas.tvShows}</p>
 
             <div>
-            <img src="${disneychar.imageUrl}" alt="picture"/>
+            <img src="${datas.imageUrl}" alt="picture"/>
             </div>
 
 
@@ -64,7 +62,7 @@ else{
 
         `;
 
-      })
+
 
       characters.innerHTML = output;
 
